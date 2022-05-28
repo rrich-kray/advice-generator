@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
   const api = "https://api.adviceslip.com/advice";
@@ -13,6 +13,11 @@ function App() {
       changeQuoteNum(quoteObj.slip.id);
     });
   };
+
+  useEffect(() => {
+    fetchQuote();
+    document.title = "Advice Generator";
+  });
 
   return (
     <div id="app">
