@@ -1,0 +1,56 @@
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-clr3)
+}
+
+#modal {
+  width: 650px;
+  height: 400px;
+  background: var(--secondary-clr2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+#advice-num {
+  position: absolute;
+  top: 30px;
+  font-size: 0.75rem;
+  color: var(--primary-clr2)
+}
+
+#quote-container {
+  color: white;
+  max-width: 100%;
+  width: 75%;
+  text-align: center;
+}
+
+#divider {
+  position: absolute;
+  bottom: 80px
+}
+
+#change-quote-btn {
+  height: 75px;
+  width: 75px;
+  background: var(--primary-clr2);
+  border-radius: 50%;
+  position: absolute;
+  top: 350px;
+  cursor: pointer;
+  border: none;
+  transition: 0.25s ease;
+}
+
+#change-quote-btn:hover {
+  box-shadow: 0 0 10px var(--primary-clr2), 0 0 40px var(--primary-clr2), 0 0 80px var(--primary-clr2);
+}

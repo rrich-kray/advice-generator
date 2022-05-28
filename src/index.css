@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Source+Sans+Pro:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Manrope,
+    monospace;
+}
+
+:root {
+  font-size: 28px;
+  --primary-clr1: hsl(193, 38%, 86%);
+  --primary-clr2: hsl(150, 100%, 66%);
+  --secondary-clr1: hsl(217, 19%, 38%);
+  --secondary-clr2: hsl(217, 19%, 24%);
+  --secondary-clr3: hsl(218, 23%, 16%);
+}
