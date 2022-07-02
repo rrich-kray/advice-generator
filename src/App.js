@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     fetchQuote();
     document.title = "Advice Generator";
-  });
+  }, []);
 
   return (
     <div id="app">
