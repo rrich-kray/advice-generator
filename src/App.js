@@ -6,8 +6,10 @@ function App() {
   const [currentQuote, changeCurrentQuote] = useState("");
   const [quoteNum, changeQuoteNum] = useState("");
 
+  const generateRandomAdviceSlipId = () => Math.floor(Math.random() * ((120 - 1) + 1) )
+  
   const fetchQuote = async () => {
-    const res = await fetch(api);
+    const res = await fetch(`https://api.adviceslip.com/advice/${generateRandomAdviceSlipId()}`);
     res.json().then((quoteObj) => {
       changeCurrentQuote(quoteObj.slip.advice);
       changeQuoteNum(quoteObj.slip.id);
